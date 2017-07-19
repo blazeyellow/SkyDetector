@@ -20,7 +20,7 @@ public class LogFileTest extends TestCase {
         DefaultFileMonitor fileMonitor;
         try {
             FileSystemManager systemManager = VFS.getManager();
-            fileObject = systemManager.resolveFile("/Volumes/HDD2/Users/fuzzy/IdeaProjects/SkyDetector/src/main/resources/server_failures.log");
+            fileObject = systemManager.resolveFile("/Users/fuzzy/Projects/SkyDetector/src/main/resources/server_failures.log");
             System.out.println("Monitoring: " + fileObject.getName());
             fileMonitor = new DefaultFileMonitor(new LogFileListener(fileObject.getName().getPath()));
 
@@ -50,7 +50,7 @@ public class LogFileTest extends TestCase {
             byte[] b2 = {1, 2, 3, 4, 5, 6, 7, 8};
 
             // create a new RandomAccessFile with filename test
-            RandomAccessFile raf = new RandomAccessFile("/Volumes/HDD2/Users/fuzzy/IdeaProjects/SkyDetector/src/main/resources/server_failures.log", "rw");
+            RandomAccessFile raf = new RandomAccessFile("/Users/fuzzy/Projects/SkyDetector/src/main/resources/server_failures.log", "rw");
 
             // write something in the file
             raf.writeUTF("Hello World");

@@ -17,7 +17,7 @@ public class SkyDetector {
     public static void main(String[] args) {
 
         System.out.println(LogFactory.FACTORY_PROPERTIES);
-        String logFile = "/Volumes/HDD2/Users/fuzzy/IdeaProjects/SkyDetector2/src/main/resources/server_failures.log";
+        String logFile = "/Users/fuzzy/Projects/SkyDetector2/src/main/resources/server_failures.log";
         if (args!=null && args.length>0) {
             logFile = args[0];
 
